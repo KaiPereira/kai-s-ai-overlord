@@ -17,10 +17,10 @@ app.post("/join", async (req, res) => {
 			users: userId,
 		});
 
-		res.send(`Is that really you <@${userId}>? Welcome to my mindspace :D`);
+		res.send(`Hello world <@${userId}>! Welcome to my mindspace :D`);
 	} catch (error) {
 		console.error(error);
-		res.send("Whoooops, my cat hit the self-destruct server button, or maybe you're just already in the channel?");
+		res.send("Whoooops, my cat either hit the server self-destruct button, or maybe you're just already in the channel?");
 	}
 });
 
