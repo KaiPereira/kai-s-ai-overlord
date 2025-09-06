@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const client = new WebClient(process.env.SLACK_BOT_TOKEN);
-const PRIVATE_CHANNEL_ID = "C1234567890";
+const PRIVATE_CHANNEL_ID = "C09D6UCAUC8";
 
 app.post("/join", async (req, res) => {
 	const userId = req.body.user_id;
