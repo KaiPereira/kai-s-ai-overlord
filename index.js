@@ -24,5 +24,7 @@ app.post("/join", async (req, res) => {
 	}
 });
 
-app.listen(3000, () => console.log("Kai's AI overlord is already running on port 3000"));
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => console.log("Kai's AI overlord is already running on port 3000"));
 
